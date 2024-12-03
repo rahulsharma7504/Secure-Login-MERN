@@ -4,6 +4,8 @@ import Login from './Files/Login';
 import Dashboard from './Files/Dashboard';
 import Register from './Files/Register';
 import { AuthProvider } from './context/Authcontext';
+import FormikForm from './Files/FormikForm';
+import ImageUploadForm from './Files/ImageValidate';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
     <Router>
       <AuthProvider>
       <Routes>
+        <Route path="/test" element={<FormikForm />} />
+        <Route path="/image" element={<ImageUploadForm />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register/>} />
         <Route path="/dashboard" element={<Dashboard />} />

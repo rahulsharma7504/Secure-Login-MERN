@@ -3,7 +3,7 @@ import axios from 'axios';
 import{useNavigate, NavLink} from 'react-router-dom'
 
 // Create context
-const AuthContext = createContext();
+export const AuthContext = createContext();
 
 // Custom hook to access AuthContext easily
 export const useAuth = () => useContext(AuthContext);
