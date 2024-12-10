@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
 import { useFormik } from 'formik'
-import { FormValidation } from '../Validation'
+import { FormValidation } from './Validation'
 
 
 const FormikForm = () => {

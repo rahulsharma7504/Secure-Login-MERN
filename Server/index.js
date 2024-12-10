@@ -16,7 +16,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/secure_login').then(()=>{
 });
 
 app.use(cookieParser());
-const User = mongoose.model('login', new mongoose.Schema({}, { strict: false }));
+const User = mongoose.model('login', new mongoose.Schema({}, { timestamps:true,strict: false }));
 
 
 // Middleware to parse JSON requests
