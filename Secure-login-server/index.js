@@ -54,7 +54,7 @@ app.post('/api/form', async (req, res) => {
       service: 'smtp@gmail.com', // Gmail SMTP service
       auth: {
         user: 'rahul658541@gmail.com',  // Sender email
-        pass: 'wtdehjcmfggpsghk',     // Sender password from environment variable
+        pass: process.env.MAIL_PASS,     // Sender password from environment variable
     
       }, 
       tls: { 
